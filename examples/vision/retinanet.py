@@ -919,8 +919,8 @@ val_dataset = val_dataset.prefetch(autotune)
 
 epochs = 1
 
-# Runing 100 training and 50 validation steps,
-# change this when training on full dataset
+# Running 100 training and 50 validation steps,
+# remove `.take` when training on the full dataset
 
 model.fit(
     train_dataset.take(100),
