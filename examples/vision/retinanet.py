@@ -23,7 +23,7 @@ the problem of the extreme foreground-background class imbalance.
 **References:**
 
 - [RetinaNet Paper](https://arxiv.org/abs/1708.02002)
-- [Feature Pyramid Network Paper] (https://arxiv.org/abs/1612.03144)
+- [Feature Pyramid Network Paper](https://arxiv.org/abs/1612.03144)
 """
 
 
@@ -817,7 +817,6 @@ class RetinaNetLoss(tf.losses.Loss):
         box_loss = tf.math.divide_no_nan(tf.reduce_sum(box_loss, axis=-1), normalizer)
         loss = clf_loss + box_loss
         return loss
-
 
 
 """
